@@ -1,17 +1,10 @@
 package org.codelabo
 
-import org.junit.Test
-import org.junit.runner.RunWith
-import org.junit.runners.JUnit4
-import static org.junit.Assert.assertEquals
+import groovy.util.GroovyTestCase
 import org.codelabo.Hello
 
-@RunWith(JUnit4)
-class HelloTest {
-  @Test
+class HelloTest extends GroovyTestCase {
   void testHello() {
     assert new Hello().hello == "Hello, World!"
-    assertEquals new Hello().hello, "Hello, World!"
-    assertEquals(new Hello().hello, "Hello, World!")
   }
 }
